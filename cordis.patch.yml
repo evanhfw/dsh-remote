@@ -1,0 +1,12 @@
+# dsh-remote bundle patch: inserts the plugin row into the profile roster.
+# Override this row's `config` from the profile's own cordis.patch.yml to
+# change allowlists, approval stance, or timeouts.
+- insert:
+    - id: dsh-remote
+      name: 'dsh-remote'
+      config:
+        # Empty allowHosts + allowFromSshConfig means: exactly the Host aliases
+        # declared in sshConfig. Add patterns (globs allowed, `!` negates) to
+        # narrow or widen that set. A single "*" allows any reachable alias.
+        allowHosts: []
+        allowFromSshConfig: true

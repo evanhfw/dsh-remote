@@ -1,0 +1,5 @@
+# Local test harness: fake ssh/rsync shims, dependency symlinks, and
+# absolute paths specific to one machine.
+.selftest/
+
+node_modules/

@@ -1,0 +1,6 @@
+{
+  "name": {
+    "title": "dsh-remote",
+    "description": "Run commands, read and edit files, sync paths, and run tests on remote machines over ssh and rsync."
+  }
+}

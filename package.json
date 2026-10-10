@@ -1,0 +1,24 @@
+{
+  "name": "dsh-remote",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Remote-machine tools for DSH: exec, read, edit, rsync, test over ssh/rsync.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "locale/*.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
